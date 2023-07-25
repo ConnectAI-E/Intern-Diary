@@ -1,11 +1,10 @@
 import Link from 'next/link';
 import {compareDesc, format, parseISO} from 'date-fns';
 import {allPosts, Post} from 'contentlayer/generated';
-import {getMDXComponent} from 'next-contentlayer/hooks';
 
 function PostCard(post: Post) {
-    const code = post.body.code;
-    const Content = getMDXComponent(code);
+    // max 300 characters
+    const description = post.description.length > 300 ? post.description.slice(0, 300) + '...' : post.description;
 
     return (
         <div className="mb-8">
@@ -27,7 +26,7 @@ function PostCard(post: Post) {
             </div>
 
             <div className="text-sm">
-                <Content />
+                { description }
             </div>
         </div>
     );
