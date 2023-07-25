@@ -1,23 +1,5 @@
-# Next.js Contentlayer Example
+# ConnectAI Intern Diary
+> 相信涓流，奔涌成海
 
-## Demo
-
-View the deployed project: [Demo](https://next-contentlayer-example.vercel.app/)
-
-## Try it Now
-
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-908a85?logo=gitpod)](http://gitpod.io/#https://github.com/contentlayerdev/next-contentlayer-example)
-
-## Local Installation
-
-Clone the project:
-
-    git clone git@github.com:contentlayerdev/next-contentlayer-example.git
-
-Install dependencies:
-
-    yarn
-
-Run dev server:
-
-    yarn dev
+## Capture
+<img width="953" alt="image" src="https://github.com/ConnectAI-E/Intern-Diary/assets/50035229/51709687-209f-4f7a-b5ad-626ebbdb9b78">
