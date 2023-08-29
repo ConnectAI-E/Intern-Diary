@@ -29,7 +29,7 @@ Vue-i18n提供了两种方法来进行翻译：$t 和 i18n.global.t。它们之�
 
 `$t` 是Vue-i18n自带的实例方法，可以在模板中直接使用。它适用于简单的翻译操作，例如：
 
-```js
+```
 <template>
   <div>
     <p>{{ $t('greeting') }}</p>
@@ -37,10 +37,11 @@ Vue-i18n提供了两种方法来进行翻译：$t 和 i18n.global.t。它们之�
 </template>
 ```
 
+<br />
 使用 i18n.global.t
 `i18n.global.t` 是全局方法，需要通过 $i18n 实例来访问。它适用于需要在代码中进行翻译的情况，例如：
 
-```js
+```
 <template>
   <div>
     <p>{{ $i18n.global.t('farewell') }}</p>
@@ -48,15 +49,16 @@ Vue-i18n提供了两种方法来进行翻译：$t 和 i18n.global.t。它们之�
 </template>
 ```
 
+<br />
 可以在i18n的文件中export一个全局的函数 `t` 方便我们调用
-```js
+```
 export function t(key: string) {
     return i18n.global.t(key);
 }
 ```
 
 这样就可以在任何文件里引入，然后翻译，而且这种写法可以在任何组件中的方法、计算属性或模板中使用。
-```js
+```
 import { t } from '@/locales';
 
 message.success(t('message.msg.success'));
